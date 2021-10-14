@@ -117,9 +117,9 @@ vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
 vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 0 5885 5905 5925 0
 vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 3
-vtxtable powervalues 14 20 23
-vtxtable powerlabels 25 100 200
+vtxtable powerlevels 4
+vtxtable powervalues 14 20 23 25
+vtxtable powerlabels 25 100 200 350
 save
 
 ```
