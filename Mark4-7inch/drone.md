@@ -39,3 +39,7 @@
 - GPS Module: QUESCAN M10FLY 10Hz M10 
     - With Compass for FPV Drone Flight Controller
     - Compatible with Ardupilot Betaflight INAV Pixhawk
+
+- Other: 
+  - MG Chemicals - 422C-55MLCA 422C Silicone Conformal Coating
+  - 4pcs RC Brushless Motor Wire Cover Protection Tube 65mm
