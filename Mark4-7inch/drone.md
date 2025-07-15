@@ -6,7 +6,7 @@
   - Weight: 121g
   - Camera mount size:19.3mm
 
-- Motor: 2806.5 2807 1300KV Motor 
+- Motor: 2806.5 2807 1300KV 
 
 - Flight Controller: F405
   -  Main control chip: STM32F405RGT6

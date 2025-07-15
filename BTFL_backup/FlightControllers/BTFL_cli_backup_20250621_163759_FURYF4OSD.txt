@@ -1,0 +1,61 @@
+# diff all defaults
+
+# version
+# Betaflight / STM32F405 (S405) 4.2.6 Jan  5 2021 / 19:07:23 (a4b6db1e7) MSP API: 1.43
+# config: manufacturer_id: DIAT, board_name: FURYF4OSD, version: 45b6e90d, date: 2020-11-27T19:02:33Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FURYF4OSD
+manufacturer_id DIAT
+mcu_id 004f0026354b501620323246
+signature 
+
+# master
+#set acc_hardware = AUTO
+set acc_hardware = NONE
+#set mag_hardware = AUTO
+set mag_hardware = NONE
+#set baro_hardware = AUTO
+set baro_hardware = NONE
+#set dshot_idle_value = 300
+set dshot_idle_value = 400
+#set dshot_bidir = OFF
+set dshot_bidir = ON
+#set motor_pwm_protocol = DSHOT600
+set motor_pwm_protocol = DSHOT300
+#set pid_process_denom = 1
+set pid_process_denom = 2
+#set gyro_1_align_yaw = 0
+set gyro_1_align_yaw = 1800
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save

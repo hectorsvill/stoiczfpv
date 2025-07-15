@@ -1,0 +1,139 @@
+# diff all defaults
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.2.11 Nov  9 2021 / 20:29:32 (948ba6339) MSP API: 1.43
+# config: manufacturer_id: JHEF, board_name: JHEF7DUAL, version: 7b156dec, date: 2021-07-26T13:19:23Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name JHEF7DUAL
+manufacturer_id JHEF
+mcu_id 003500285632500220323236
+signature 
+
+# name: glide5.stoicz
+#feature -RX_SERIAL
+#feature -MOTOR_STOP
+#feature -TELEMETRY
+
+# feature
+feature -RX_PARALLEL_PWM
+#feature -LED_STRIP
+feature RX_SERIAL
+feature MOTOR_STOP
+feature TELEMETRY
+#feature RX_PARALLEL_PWM
+feature LED_STRIP
+
+# map
+#map AETR1234
+map EATR1234
+
+# serial
+#serial 1 0 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+#serial 4 0 115200 57600 0 115200
+serial 4 2048 115200 57600 0 115200
+
+# led
+#led 0 0,0::C:0
+led 0 8,8::CB:2
+#led 1 0,0::C:0
+led 1 9,8::CB:2
+#led 2 0,0::C:0
+led 2 10,8::CB:13
+#led 3 0,0::C:0
+led 3 11,8::CB:3
+
+# aux
+#aux 0 0 0 900 900 0 0
+aux 0 0 3 1700 2100 0 0
+#aux 1 0 0 900 900 0 0
+aux 1 13 1 1400 1625 0 0
+#aux 2 0 0 900 900 0 0
+aux 2 35 1 1875 2100 0 0
+#aux 3 0 0 900 900 0 0
+aux 3 36 0 1700 2100 0 0
+#aux 4 0 0 900 900 0 0
+aux 4 39 2 1350 1750 0 0
+
+# master
+#set gyro_to_use = FIRST
+set gyro_to_use = SECOND
+#set mag_hardware = AUTO
+set mag_hardware = NONE
+#set baro_hardware = AUTO
+set baro_hardware = NONE
+#set rssi_channel = 0
+set rssi_channel = 8
+#set serialrx_provider = SPEK1024
+set serialrx_provider = CRSF
+#set dshot_bidir = OFF
+set dshot_bidir = ON
+#set motor_pwm_protocol = DISABLED
+set motor_pwm_protocol = DSHOT600
+#set align_board_yaw = 0
+set align_board_yaw = 180
+#set small_angle = 25
+set small_angle = 180
+#set gyro_1_align_yaw = 0
+set gyro_1_align_yaw = 900
+#set gyro_2_sensor_align = CW90
+set gyro_2_sensor_align = CW90FLIP
+#set gyro_2_align_pitch = 0
+set gyro_2_align_pitch = 1800
+#set gyro_2_align_yaw = 0
+set gyro_2_align_yaw = 900
+#set name = -
+set name = glide5.stoicz
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 2
+
+rateprofile 0
+
+# rateprofile 0
+#set roll_rc_rate = 100
+set roll_rc_rate = 110
+#set pitch_rc_rate = 100
+set pitch_rc_rate = 110
+#set yaw_rc_rate = 100
+set yaw_rc_rate = 105
+#set roll_expo = 0
+set roll_expo = 10
+#set pitch_expo = 0
+set pitch_expo = 10
+#set yaw_expo = 0
+set yaw_expo = 5
+#set roll_srate = 70
+set roll_srate = 81
+#set pitch_srate = 70
+set pitch_srate = 81
+#set yaw_srate = 70
+set yaw_srate = 75
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
