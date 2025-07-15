@@ -9,7 +9,7 @@ Hi, I'm stoiczfpv, a passionate FPV drone pilot and builder. This repository is 
 
 # Flight Log
 
-- [2025]()
+- [2025](https://github.com/hectorsvill/stoiczfpv/blob/main/Flight%20Log/FLIGHTLOG.md)
 
 
 📬 Connect With Me
